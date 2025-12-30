@@ -202,6 +202,20 @@ if confirm-overwrite $config/btop
     ln -s (realpath btop) $config/btop
 end
 
+# QuickShell (wallpaper picker)
+if confirm-overwrite $config/quickshell/wallpaper
+    log 'Installing quickshell wallpaper config...'
+    mkdir -p $config/quickshell
+    ln -s (realpath quickshell/wallpaper) $config/quickshell/wallpaper
+end
+
+# QuickShell (cheatsheet)
+if confirm-overwrite $config/quickshell/cheatsheet
+    log 'Installing quickshell cheatsheet config...'
+    mkdir -p $config/quickshell
+    ln -s (realpath quickshell/cheatsheet) $config/quickshell/cheatsheet
+end
+
 # Install spicetify
 if set -q _flag_spotify
     log 'Installing spotify (spicetify)...'

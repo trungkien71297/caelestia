@@ -40,3 +40,8 @@ if status is-interactive
         echo -en "\e]133;A\e\\"
     end
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/peemoti/.lmstudio/bin
+# End of LM Studio CLI section
+
